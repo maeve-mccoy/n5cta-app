@@ -12,15 +12,31 @@
 		D61D9F1C1EADA91200FE5DD8 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B291EABBD0C00033CF8 /* Assets.xcassets */; };
 		D61D9F1E1EADA92000FE5DD8 /* n5ctaApp.app in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B1C1EABBD0B00033CF8 /* n5ctaApp.app */; };
 		D63232751F3AA4180046F7A6 /* ChooseXcURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63232741F3AA4180046F7A6 /* ChooseXcURL.swift */; };
+		D667D3EB205B506700A2D738 /* ChooseStateRecordsURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D667D3EA205B506700A2D738 /* ChooseStateRecordsURL.swift */; };
+		D667D3ED205B50AC00A2D738 /* StateRecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D667D3EC205B50AC00A2D738 /* StateRecordsTableViewController.swift */; };
+		D667D3EF205B50E400A2D738 /* StateRecordsDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D667D3EE205B50E400A2D738 /* StateRecordsDictionary.swift */; };
+		D667D3F7208ABC4100A2D738 /* RaceCodeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D667D3F6208ABC4100A2D738 /* RaceCodeConverter.swift */; };
 		D66B047B1F5C3CC400FE6938 /* xcDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B047A1F5C3CC400FE6938 /* xcDictionary.swift */; };
 		D66F1B201EABBD0B00033CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B1F1EABBD0B00033CF8 /* AppDelegate.swift */; };
-		D66F1B221EABBD0B00033CF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B211EABBD0B00033CF8 /* ViewController.swift */; };
+		D66F1B221EABBD0B00033CF8 /* AllTimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B211EABBD0B00033CF8 /* AllTimeListViewController.swift */; };
 		D66F1B281EABBD0C00033CF8 /* n5ctaApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B261EABBD0C00033CF8 /* n5ctaApp.xcdatamodeld */; };
 		D66F1B2A1EABBD0C00033CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66F1B291EABBD0C00033CF8 /* Assets.xcassets */; };
 		D66F1B2D1EABBD0C00033CF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66F1B2B1EABBD0C00033CF8 /* LaunchScreen.storyboard */; };
 		D685ED7B1F223A530058661A /* ChooseOutdoorURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685ED7A1F223A530058661A /* ChooseOutdoorURL.swift */; };
+		D68FD3DD203D0B0400F90132 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68FD3DC203D0B0400F90132 /* WelcomeViewController.swift */; };
+		D68FD3DF2040A88400F90132 /* StateRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68FD3DE2040A88400F90132 /* StateRecordsViewController.swift */; };
+		D68FD3E1204E27D600F90132 /* ExpandableCellStateRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68FD3E0204E27D600F90132 /* ExpandableCellStateRecords.swift */; };
+		D68FD3E52058A86800F90132 /* RelayStateRecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68FD3E42058A86700F90132 /* RelayStateRecordsTableViewController.swift */; };
 		D69ECA0A1F7AC3FC00E418AC /* outdoorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69ECA091F7AC3FC00E418AC /* outdoorDictionary.swift */; };
 		D6A679781F4BB123005CA8E3 /* xcTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A679771F4BB123005CA8E3 /* xcTableViewController.swift */; };
+		D6B3A56D20AA744800C87802 /* MeetRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B3A56C20AA744800C87802 /* MeetRecordsViewController.swift */; };
+		D6B3A56F20AA7BC600C87802 /* RelayMeetRecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B3A56E20AA7BC600C87802 /* RelayMeetRecordsTableViewController.swift */; };
+		D6B3A57120AA7C0200C87802 /* MeetRecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B3A57020AA7C0200C87802 /* MeetRecordsTableViewController.swift */; };
+		D6B3A57320AA81AB00C87802 /* ChooseMeetRecordsURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B3A57220AA81AB00C87802 /* ChooseMeetRecordsURL.swift */; };
+		D6B3A57520ABCA5200C87802 /* MeetRecordsDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B3A57420ABCA5200C87802 /* MeetRecordsDictionary.swift */; };
+		D6B62D2320012DBC007F9D0B /* ChooseIndoorURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B62D2220012DBC007F9D0B /* ChooseIndoorURL.swift */; };
+		D6B62D2520012DFA007F9D0B /* IndoorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B62D2420012DFA007F9D0B /* IndoorTableViewController.swift */; };
+		D6B62D2720012E0A007F9D0B /* IndoorDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B62D2620012E0A007F9D0B /* IndoorDictionary.swift */; };
 		D6CF9AD51EC3562F006EF92A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9AD31EC3562F006EF92A /* Main.storyboard */; };
 		D6CF9AD91EC390B2006EF92A /* outdoorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9AD81EC390B2006EF92A /* outdoorTableViewController.swift */; };
 		E6DD6948EC5691A381B7880B /* Pods_n5ctaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8151388989B7DEC0504633 /* Pods_n5ctaApp.framework */; };
@@ -33,17 +49,33 @@
 		D60546781F0DD1C900854FFE /* PickerDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerDictionary.swift; sourceTree = "<group>"; };
 		D60BF56A1ED9D918001EB1DC /* ExpandableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
 		D63232741F3AA4180046F7A6 /* ChooseXcURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseXcURL.swift; sourceTree = "<group>"; };
+		D667D3EA205B506700A2D738 /* ChooseStateRecordsURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseStateRecordsURL.swift; sourceTree = "<group>"; };
+		D667D3EC205B50AC00A2D738 /* StateRecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRecordsTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D667D3EE205B50E400A2D738 /* StateRecordsDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRecordsDictionary.swift; sourceTree = "<group>"; };
+		D667D3F6208ABC4100A2D738 /* RaceCodeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCodeConverter.swift; sourceTree = "<group>"; };
 		D66B047A1F5C3CC400FE6938 /* xcDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xcDictionary.swift; sourceTree = "<group>"; };
 		D66F1B1C1EABBD0B00033CF8 /* n5ctaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = n5ctaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66F1B1F1EABBD0B00033CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D66F1B211EABBD0B00033CF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D66F1B211EABBD0B00033CF8 /* AllTimeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTimeListViewController.swift; sourceTree = "<group>"; };
 		D66F1B271EABBD0C00033CF8 /* n5ctaApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = n5ctaApp.xcdatamodel; sourceTree = "<group>"; };
 		D66F1B291EABBD0C00033CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D66F1B2C1EABBD0C00033CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D66F1B2E1EABBD0C00033CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D685ED7A1F223A530058661A /* ChooseOutdoorURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseOutdoorURL.swift; sourceTree = "<group>"; };
+		D68FD3DC203D0B0400F90132 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D68FD3DE2040A88400F90132 /* StateRecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateRecordsViewController.swift; sourceTree = "<group>"; };
+		D68FD3E0204E27D600F90132 /* ExpandableCellStateRecords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCellStateRecords.swift; sourceTree = "<group>"; };
+		D68FD3E42058A86700F90132 /* RelayStateRecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayStateRecordsTableViewController.swift; sourceTree = "<group>"; };
 		D69ECA091F7AC3FC00E418AC /* outdoorDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outdoorDictionary.swift; sourceTree = "<group>"; };
 		D6A679771F4BB123005CA8E3 /* xcTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xcTableViewController.swift; sourceTree = "<group>"; };
+		D6B3A56C20AA744800C87802 /* MeetRecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetRecordsViewController.swift; sourceTree = "<group>"; };
+		D6B3A56E20AA7BC600C87802 /* RelayMeetRecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayMeetRecordsTableViewController.swift; sourceTree = "<group>"; };
+		D6B3A57020AA7C0200C87802 /* MeetRecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetRecordsTableViewController.swift; sourceTree = "<group>"; };
+		D6B3A57220AA81AB00C87802 /* ChooseMeetRecordsURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMeetRecordsURL.swift; sourceTree = "<group>"; };
+		D6B3A57420ABCA5200C87802 /* MeetRecordsDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetRecordsDictionary.swift; sourceTree = "<group>"; };
+		D6B62D2220012DBC007F9D0B /* ChooseIndoorURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseIndoorURL.swift; sourceTree = "<group>"; };
+		D6B62D2420012DFA007F9D0B /* IndoorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorTableViewController.swift; sourceTree = "<group>"; };
+		D6B62D2620012E0A007F9D0B /* IndoorDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorDictionary.swift; sourceTree = "<group>"; };
 		D6CF9AD41EC3562F006EF92A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6CF9AD81EC390B2006EF92A /* outdoorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outdoorTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,19 +142,67 @@
 		D66F1B1E1EABBD0B00033CF8 /* n5ctaApp */ = {
 			isa = PBXGroup;
 			children = (
-				D652C8E21F526EAE000CE6D6 /* crossCountry */,
-				D652C8E11F526E94000CE6D6 /* outdoor */,
+				D6B3A56B20AA717200C87802 /* meetRecords */,
+				D69CFDD7203CF3B3000EF9A8 /* stateRecords */,
+				D69CFDD6202933EB000EF9A8 /* allTimeLists */,
 				D66F1B1F1EABBD0B00033CF8 /* AppDelegate.swift */,
-				D66F1B211EABBD0B00033CF8 /* ViewController.swift */,
 				D60546781F0DD1C900854FFE /* PickerDictionary.swift */,
+				D667D3F6208ABC4100A2D738 /* RaceCodeConverter.swift */,
 				D60BF56A1ED9D918001EB1DC /* ExpandableCell.swift */,
+				D68FD3E0204E27D600F90132 /* ExpandableCellStateRecords.swift */,
 				D66F1B291EABBD0C00033CF8 /* Assets.xcassets */,
 				D66F1B2B1EABBD0C00033CF8 /* LaunchScreen.storyboard */,
 				D6CF9AD31EC3562F006EF92A /* Main.storyboard */,
 				D66F1B2E1EABBD0C00033CF8 /* Info.plist */,
 				D66F1B261EABBD0C00033CF8 /* n5ctaApp.xcdatamodeld */,
+				D68FD3DC203D0B0400F90132 /* WelcomeViewController.swift */,
 			);
 			path = n5ctaApp;
+			sourceTree = "<group>";
+		};
+		D69CFDD6202933EB000EF9A8 /* allTimeLists */ = {
+			isa = PBXGroup;
+			children = (
+				D66F1B211EABBD0B00033CF8 /* AllTimeListViewController.swift */,
+				D652C8E11F526E94000CE6D6 /* outdoor */,
+				D652C8E21F526EAE000CE6D6 /* crossCountry */,
+				D6B62D2120012D52007F9D0B /* indoor */,
+			);
+			name = allTimeLists;
+			sourceTree = "<group>";
+		};
+		D69CFDD7203CF3B3000EF9A8 /* stateRecords */ = {
+			isa = PBXGroup;
+			children = (
+				D68FD3DE2040A88400F90132 /* StateRecordsViewController.swift */,
+				D68FD3E42058A86700F90132 /* RelayStateRecordsTableViewController.swift */,
+				D667D3EA205B506700A2D738 /* ChooseStateRecordsURL.swift */,
+				D667D3EC205B50AC00A2D738 /* StateRecordsTableViewController.swift */,
+				D667D3EE205B50E400A2D738 /* StateRecordsDictionary.swift */,
+			);
+			name = stateRecords;
+			sourceTree = "<group>";
+		};
+		D6B3A56B20AA717200C87802 /* meetRecords */ = {
+			isa = PBXGroup;
+			children = (
+				D6B3A56C20AA744800C87802 /* MeetRecordsViewController.swift */,
+				D6B3A56E20AA7BC600C87802 /* RelayMeetRecordsTableViewController.swift */,
+				D6B3A57020AA7C0200C87802 /* MeetRecordsTableViewController.swift */,
+				D6B3A57220AA81AB00C87802 /* ChooseMeetRecordsURL.swift */,
+				D6B3A57420ABCA5200C87802 /* MeetRecordsDictionary.swift */,
+			);
+			name = meetRecords;
+			sourceTree = "<group>";
+		};
+		D6B62D2120012D52007F9D0B /* indoor */ = {
+			isa = PBXGroup;
+			children = (
+				D6B62D2220012DBC007F9D0B /* ChooseIndoorURL.swift */,
+				D6B62D2420012DFA007F9D0B /* IndoorTableViewController.swift */,
+				D6B62D2620012E0A007F9D0B /* IndoorDictionary.swift */,
+			);
+			name = indoor;
 			sourceTree = "<group>";
 		};
 		DBB839BEF48F44DED41FBEDA /* Frameworks */ = {
@@ -144,8 +224,6 @@
 				D66F1B181EABBD0B00033CF8 /* Sources */,
 				D66F1B191EABBD0B00033CF8 /* Frameworks */,
 				D66F1B1A1EABBD0B00033CF8 /* Resources */,
-				1B45204383E0E4C1777E4980 /* [CP] Embed Pods Frameworks */,
-				0AE2A8BF76247998CEB725EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,49 +284,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AE2A8BF76247998CEB725EE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-n5ctaApp/Pods-n5ctaApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B45204383E0E4C1777E4980 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-n5ctaApp/Pods-n5ctaApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		69695E9352C598724A3F91B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-n5ctaApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -258,19 +309,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B3A57120AA7C0200C87802 /* MeetRecordsTableViewController.swift in Sources */,
 				D69ECA0A1F7AC3FC00E418AC /* outdoorDictionary.swift in Sources */,
+				D6B3A57520ABCA5200C87802 /* MeetRecordsDictionary.swift in Sources */,
 				D61D9F1E1EADA92000FE5DD8 /* n5ctaApp.app in Sources */,
+				D6B3A56D20AA744800C87802 /* MeetRecordsViewController.swift in Sources */,
+				D6B62D2720012E0A007F9D0B /* IndoorDictionary.swift in Sources */,
 				D60546791F0DD1C900854FFE /* PickerDictionary.swift in Sources */,
 				D61D9F1C1EADA91200FE5DD8 /* Assets.xcassets in Sources */,
+				D667D3EB205B506700A2D738 /* ChooseStateRecordsURL.swift in Sources */,
+				D6B3A56F20AA7BC600C87802 /* RelayMeetRecordsTableViewController.swift in Sources */,
 				D6A679781F4BB123005CA8E3 /* xcTableViewController.swift in Sources */,
+				D6B62D2520012DFA007F9D0B /* IndoorTableViewController.swift in Sources */,
 				D63232751F3AA4180046F7A6 /* ChooseXcURL.swift in Sources */,
 				D60BF56B1ED9D918001EB1DC /* ExpandableCell.swift in Sources */,
+				D667D3ED205B50AC00A2D738 /* StateRecordsTableViewController.swift in Sources */,
 				D6CF9AD91EC390B2006EF92A /* outdoorTableViewController.swift in Sources */,
-				D66F1B221EABBD0B00033CF8 /* ViewController.swift in Sources */,
+				D667D3F7208ABC4100A2D738 /* RaceCodeConverter.swift in Sources */,
+				D68FD3DD203D0B0400F90132 /* WelcomeViewController.swift in Sources */,
+				D68FD3E1204E27D600F90132 /* ExpandableCellStateRecords.swift in Sources */,
+				D66F1B221EABBD0B00033CF8 /* AllTimeListViewController.swift in Sources */,
+				D667D3EF205B50E400A2D738 /* StateRecordsDictionary.swift in Sources */,
 				D66F1B281EABBD0C00033CF8 /* n5ctaApp.xcdatamodeld in Sources */,
 				D66B047B1F5C3CC400FE6938 /* xcDictionary.swift in Sources */,
+				D6B62D2320012DBC007F9D0B /* ChooseIndoorURL.swift in Sources */,
+				D68FD3E52058A86800F90132 /* RelayStateRecordsTableViewController.swift in Sources */,
 				D685ED7B1F223A530058661A /* ChooseOutdoorURL.swift in Sources */,
 				D66F1B201EABBD0B00033CF8 /* AppDelegate.swift in Sources */,
+				D6B3A57320AA81AB00C87802 /* ChooseMeetRecordsURL.swift in Sources */,
+				D68FD3DF2040A88400F90132 /* StateRecordsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +358,8 @@
 				D6CF9AD41EC3562F006EF92A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = n5ctaApp;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -418,13 +486,19 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 654J8257GV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FoldingCell\"",
+				);
 				INFOPLIST_FILE = n5ctaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MM.n5ctaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
@@ -439,12 +513,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 654J8257GV;
 				INFOPLIST_FILE = n5ctaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MM.n5ctaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;

@@ -13,59 +13,71 @@ class ChooseOutdoorURL {
     func chooseURL(event: String, gender: String, category: String) -> URL {
         let url: URL!
         switch (event,gender,category) {
-        case ("100 MH (30 in)", "Girls", "Meter"):
+        case ("100 MH (30 in)", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/100MH%2030%22?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("200 MH", "Girls", "Meter"):
+        case ("200 MH", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/200MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("100 MH", "Girls", "Meter"):
+        case ("100y", "Girls", "Track"):
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1FbWjkOp1_hZErA71LBTBcf00DnNhSu-j-ETMlkHpxck/values/100%20Yds?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case ("220y", "Girls", "Track"):
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1FbWjkOp1_hZErA71LBTBcf00DnNhSu-j-ETMlkHpxck/values/220%20Yds?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case ("Mile", "Girls", "Track"):
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1FbWjkOp1_hZErA71LBTBcf00DnNhSu-j-ETMlkHpxck/values/Mile?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case ("2 Mile", "Girls", "Track"):
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1FbWjkOp1_hZErA71LBTBcf00DnNhSu-j-ETMlkHpxck/values/2%20Mile?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case ("100 MH", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/100MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("300 MH", "Girls", "Meter"):
+        case ("300 MH", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/300MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("400 MH", "Girls", "Meter"):
+        case ("400 MH", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/400MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("100", "Girls", "Meter"):
+        case ("100", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/100M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("200", "Girls", "Meter"):
+        case ("200", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/200M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("400", "Girls", "Meter"):
+        case ("400", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/400M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("800", "Girls", "Meter"):
+        case ("800", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/800M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("1500", "Girls", "Meter"):
+        case ("1500", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/1500M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("1600", "Girls", "Meter"):
+        case ("1600", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/1600M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("3000", "Girls", "Meter"):
+        case ("3000", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/3000M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("3200", "Girls", "Meter"):
+        case ("3200", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/3200M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("5000", "Girls", "Meter"):
+        case ("5000", "Girls", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/5000M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("110 MH", "Boys", "Meter"):
+        case ("110 MH", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/110MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("300 MH", "Boys", "Meter"):
+        case ("300 MH", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/300MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("400 MH", "Boys", "Meter"):
+        case ("400 MH", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/400MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("100", "Boys", "Meter"):
+        case ("100", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/100M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("200", "Boys", "Meter"):
+        case ("200", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/200M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("400", "Boys", "Meter"):
+        case ("400", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/400M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("800", "Boys", "Meter"):
+        case ("800", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/800M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("1500", "Boys", "Meter"):
+        case ("1500", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/1500M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("1600", "Boys", "Meter"):
+        case ("1600", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/1600M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("2K Steeple", "Boys", "Meter"):
+        case ("Mile", "Boys", "Track"):
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1WIFAj159pg7lpB3G-u57ZCC_rmcwg8cIUz8UHouT6mg/values/Mile?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case ("2 Mile", "Boys", "Track"):
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1WIFAj159pg7lpB3G-u57ZCC_rmcwg8cIUz8UHouT6mg/values/2%20Mile?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case ("2K Steeple", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/2K%20Steeple?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("3000", "Boys", "Meter"):
+        case ("3000", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/3000M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("3200", "Boys", "Meter"):
+        case ("3200", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/3200M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
-        case ("5000", "Boys", "Meter"):
+        case ("5000", "Boys", "Track"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1w4Nd4QCngZujCFbEDgqRyu0JG4baTyPDYx_i0kWiXVQ/values/5000M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
         case ("High Jump", "Girls", "Field"):
             url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1Q261mKmcHpKbdCd-g6p6oH8l1GLLHKC05aT_VATc5SI/values/High%20Jump?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
@@ -104,5 +116,4 @@ class ChooseOutdoorURL {
         }
         return url
     }
-    
 }

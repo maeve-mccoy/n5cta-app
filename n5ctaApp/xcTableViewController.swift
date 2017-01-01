@@ -19,10 +19,8 @@ class xcTableViewController: UITableViewController, UISearchBarDelegate, UISearc
     var category: String = ""
     var season: String = ""
     var expandedRows = Set<Int>()
-    
     var records = [Record]()
     var filteredRecords = [Record]()
-    
     let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
@@ -32,7 +30,6 @@ class xcTableViewController: UITableViewController, UISearchBarDelegate, UISearc
         self.xcTable.dataSource = self
         self.xcTable.rowHeight = UITableViewAutomaticDimension
         tableTitle.title = self.gender + " " + self.event + " - Cross Country"
-        
         self.xcTable.keyboardDismissMode = .interactive
         searchController.searchResultsUpdater = self
         searchController.hidesNavigationBarDuringPresentation = false
@@ -122,6 +119,12 @@ class xcTableViewController: UITableViewController, UISearchBarDelegate, UISearc
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:ExpandableCell = tableView.dequeueReusableCell(withIdentifier: "ExpandableCell") as! ExpandableCell
+        cell.layer.cornerRadius = 10.0
+        cell.clipsToBounds = true
+        cell.layer.borderWidth = 2.0
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.schoolLogo.layer.cornerRadius = 10.0
+        cell.schoolLogo.layer.masksToBounds = true
         if searchController.isActive {
             cell.subtitle.text = self.filteredRecords[indexPath.row].place + ". " + self.filteredRecords[indexPath.row].name + " - "+self.filteredRecords[indexPath.row].school +
                 "\n" + self.filteredRecords[indexPath.row].time +

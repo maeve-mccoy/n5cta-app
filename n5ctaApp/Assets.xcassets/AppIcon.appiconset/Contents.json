@@ -31,8 +31,9 @@
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "N5cta iphone 120x120-3.png",
       "scale" : "2x"
     },
     {
@@ -71,23 +72,27 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "ipad",
       "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "N5cta iPad 152x152.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "76x76",
-      "scale" : "2x"
-    },
-    {
       "idiom" : "ipad",
-      "size" : "83.5x83.5",
+      "filename" : "N5cta iPad 152x152real.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "ios-marketing",
+      "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "N5cta iPhone.png",
+      "scale" : "2x"
+    },
+    {
       "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "N5cta iPhone 1024.png",
       "scale" : "1x"
     }
   ],
