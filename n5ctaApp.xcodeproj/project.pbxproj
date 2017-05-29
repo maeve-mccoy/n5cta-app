@@ -7,23 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60BF56B1ED9D918001EB1DC /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BF56A1ED9D918001EB1DC /* ExpandableCell.swift */; };
+		D61D9F1C1EADA91200FE5DD8 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B291EABBD0C00033CF8 /* Assets.xcassets */; };
+		D61D9F1D1EADA91200FE5DD8 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B2E1EABBD0C00033CF8 /* Info.plist */; };
+		D61D9F1E1EADA92000FE5DD8 /* n5ctaApp.app in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B1C1EABBD0B00033CF8 /* n5ctaApp.app */; };
 		D66F1B201EABBD0B00033CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B1F1EABBD0B00033CF8 /* AppDelegate.swift */; };
 		D66F1B221EABBD0B00033CF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B211EABBD0B00033CF8 /* ViewController.swift */; };
-		D66F1B251EABBD0C00033CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66F1B231EABBD0C00033CF8 /* Main.storyboard */; };
 		D66F1B281EABBD0C00033CF8 /* n5ctaApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B261EABBD0C00033CF8 /* n5ctaApp.xcdatamodeld */; };
 		D66F1B2A1EABBD0C00033CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66F1B291EABBD0C00033CF8 /* Assets.xcassets */; };
 		D66F1B2D1EABBD0C00033CF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66F1B2B1EABBD0C00033CF8 /* LaunchScreen.storyboard */; };
+		D6CF9AD51EC3562F006EF92A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9AD31EC3562F006EF92A /* Main.storyboard */; };
+		D6CF9AD91EC390B2006EF92A /* outdoorGATTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9AD81EC390B2006EF92A /* outdoorGATTableViewController.swift */; };
+		E6DD6948EC5691A381B7880B /* Pods_n5ctaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8151388989B7DEC0504633 /* Pods_n5ctaApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A8151388989B7DEC0504633 /* Pods_n5ctaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_n5ctaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51B8F6840FB9130D084F0F5 /* Pods-n5ctaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-n5ctaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-n5ctaApp/Pods-n5ctaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D48752A7273E7ADD28306EFB /* Pods-n5ctaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-n5ctaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-n5ctaApp/Pods-n5ctaApp.release.xcconfig"; sourceTree = "<group>"; };
+		D60BF56A1ED9D918001EB1DC /* ExpandableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
 		D66F1B1C1EABBD0B00033CF8 /* n5ctaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = n5ctaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66F1B1F1EABBD0B00033CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66F1B211EABBD0B00033CF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D66F1B241EABBD0C00033CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D66F1B271EABBD0C00033CF8 /* n5ctaApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = n5ctaApp.xcdatamodel; sourceTree = "<group>"; };
 		D66F1B291EABBD0C00033CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D66F1B2C1EABBD0C00033CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D66F1B2E1EABBD0C00033CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CF9AD41EC3562F006EF92A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6CF9AD81EC390B2006EF92A /* outdoorGATTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outdoorGATTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +42,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6DD6948EC5691A381B7880B /* Pods_n5ctaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CDDD390832DBE771CAC7330 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A51B8F6840FB9130D084F0F5 /* Pods-n5ctaApp.debug.xcconfig */,
+				D48752A7273E7ADD28306EFB /* Pods-n5ctaApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D66F1B131EABBD0B00033CF8 = {
 			isa = PBXGroup;
 			children = (
 				D66F1B1E1EABBD0B00033CF8 /* n5ctaApp */,
 				D66F1B1D1EABBD0B00033CF8 /* Products */,
+				7CDDD390832DBE771CAC7330 /* Pods */,
+				DBB839BEF48F44DED41FBEDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +81,23 @@
 			children = (
 				D66F1B1F1EABBD0B00033CF8 /* AppDelegate.swift */,
 				D66F1B211EABBD0B00033CF8 /* ViewController.swift */,
-				D66F1B231EABBD0C00033CF8 /* Main.storyboard */,
+				D60BF56A1ED9D918001EB1DC /* ExpandableCell.swift */,
 				D66F1B291EABBD0C00033CF8 /* Assets.xcassets */,
 				D66F1B2B1EABBD0C00033CF8 /* LaunchScreen.storyboard */,
+				D6CF9AD31EC3562F006EF92A /* Main.storyboard */,
 				D66F1B2E1EABBD0C00033CF8 /* Info.plist */,
 				D66F1B261EABBD0C00033CF8 /* n5ctaApp.xcdatamodeld */,
+				D6CF9AD81EC390B2006EF92A /* outdoorGATTableViewController.swift */,
 			);
 			path = n5ctaApp;
+			sourceTree = "<group>";
+		};
+		DBB839BEF48F44DED41FBEDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A8151388989B7DEC0504633 /* Pods_n5ctaApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D66F1B311EABBD0C00033CF8 /* Build configuration list for PBXNativeTarget "n5ctaApp" */;
 			buildPhases = (
+				69695E9352C598724A3F91B8 /* [CP] Check Pods Manifest.lock */,
 				D66F1B181EABBD0B00033CF8 /* Sources */,
 				D66F1B191EABBD0B00033CF8 /* Frameworks */,
 				D66F1B1A1EABBD0B00033CF8 /* Resources */,
+				1B45204383E0E4C1777E4980 /* [CP] Embed Pods Frameworks */,
+				0AE2A8BF76247998CEB725EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,19 +163,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CF9AD51EC3562F006EF92A /* Main.storyboard in Resources */,
 				D66F1B2D1EABBD0C00033CF8 /* LaunchScreen.storyboard in Resources */,
 				D66F1B2A1EABBD0C00033CF8 /* Assets.xcassets in Resources */,
-				D66F1B251EABBD0C00033CF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AE2A8BF76247998CEB725EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-n5ctaApp/Pods-n5ctaApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B45204383E0E4C1777E4980 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-n5ctaApp/Pods-n5ctaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69695E9352C598724A3F91B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D66F1B181EABBD0B00033CF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61D9F1E1EADA92000FE5DD8 /* n5ctaApp.app in Sources */,
+				D61D9F1C1EADA91200FE5DD8 /* Assets.xcassets in Sources */,
+				D61D9F1D1EADA91200FE5DD8 /* Info.plist in Sources */,
+				D60BF56B1ED9D918001EB1DC /* ExpandableCell.swift in Sources */,
+				D6CF9AD91EC390B2006EF92A /* outdoorGATTableViewController.swift in Sources */,
 				D66F1B221EABBD0B00033CF8 /* ViewController.swift in Sources */,
 				D66F1B281EABBD0C00033CF8 /* n5ctaApp.xcdatamodeld in Sources */,
 				D66F1B201EABBD0B00033CF8 /* AppDelegate.swift in Sources */,
@@ -149,20 +238,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D66F1B231EABBD0C00033CF8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D66F1B241EABBD0C00033CF8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D66F1B2B1EABBD0C00033CF8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D66F1B2C1EABBD0C00033CF8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D6CF9AD31EC3562F006EF92A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6CF9AD41EC3562F006EF92A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -263,26 +352,32 @@
 		};
 		D66F1B321EABBD0C00033CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A51B8F6840FB9130D084F0F5 /* Pods-n5ctaApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 654J8257GV;
 				INFOPLIST_FILE = n5ctaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MM.n5ctaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		D66F1B331EABBD0C00033CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D48752A7273E7ADD28306EFB /* Pods-n5ctaApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 654J8257GV;
 				INFOPLIST_FILE = n5ctaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MM.n5ctaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -306,6 +401,7 @@
 				D66F1B331EABBD0C00033CF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
