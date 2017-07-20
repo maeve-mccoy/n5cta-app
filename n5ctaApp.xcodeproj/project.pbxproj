@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60546791F0DD1C900854FFE /* DataDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60546781F0DD1C900854FFE /* DataDictionary.swift */; };
 		D60BF56B1ED9D918001EB1DC /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BF56A1ED9D918001EB1DC /* ExpandableCell.swift */; };
 		D61D9F1C1EADA91200FE5DD8 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B291EABBD0C00033CF8 /* Assets.xcassets */; };
 		D61D9F1D1EADA91200FE5DD8 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = D66F1B2E1EABBD0C00033CF8 /* Info.plist */; };
@@ -25,6 +26,7 @@
 		3A8151388989B7DEC0504633 /* Pods_n5ctaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_n5ctaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51B8F6840FB9130D084F0F5 /* Pods-n5ctaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-n5ctaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-n5ctaApp/Pods-n5ctaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D48752A7273E7ADD28306EFB /* Pods-n5ctaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-n5ctaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-n5ctaApp/Pods-n5ctaApp.release.xcconfig"; sourceTree = "<group>"; };
+		D60546781F0DD1C900854FFE /* DataDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDictionary.swift; sourceTree = "<group>"; };
 		D60BF56A1ED9D918001EB1DC /* ExpandableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
 		D66F1B1C1EABBD0B00033CF8 /* n5ctaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = n5ctaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66F1B1F1EABBD0B00033CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				D66F1B1F1EABBD0B00033CF8 /* AppDelegate.swift */,
 				D66F1B211EABBD0B00033CF8 /* ViewController.swift */,
+				D60546781F0DD1C900854FFE /* DataDictionary.swift */,
 				D60BF56A1ED9D918001EB1DC /* ExpandableCell.swift */,
 				D66F1B291EABBD0C00033CF8 /* Assets.xcassets */,
 				D66F1B2B1EABBD0C00033CF8 /* LaunchScreen.storyboard */,
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D61D9F1E1EADA92000FE5DD8 /* n5ctaApp.app in Sources */,
+				D60546791F0DD1C900854FFE /* DataDictionary.swift in Sources */,
 				D61D9F1C1EADA91200FE5DD8 /* Assets.xcassets in Sources */,
 				D61D9F1D1EADA91200FE5DD8 /* Info.plist in Sources */,
 				D60BF56B1ED9D918001EB1DC /* ExpandableCell.swift in Sources */,

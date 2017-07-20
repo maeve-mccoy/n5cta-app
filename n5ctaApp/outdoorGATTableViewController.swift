@@ -12,6 +12,8 @@ class outdoorTableViewController: UIViewController, UITableViewDelegate, UITable
 
     @IBOutlet var outdoorGATTable: UITableView!
     
+    var event: String = ""
+    
     var runnerTime = [String]()
     var runnerDate = [String]()
     var runnerName = [String]()
@@ -20,6 +22,7 @@ class outdoorTableViewController: UIViewController, UITableViewDelegate, UITable
     var runnerTrack = [String]()
     var runnerMeet = [String]()
     var runnerPlace = [String]()
+    var runnerWind = [String]()
     var expandedRows = Set<Int>()
     var place = Int()
     
@@ -37,10 +40,41 @@ class outdoorTableViewController: UIViewController, UITableViewDelegate, UITable
     }
 
     func allTimeGirls() {
-        guard let url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/800M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c") else {
-            print("Error: cannot create URL")
-            return
+        //switch block for all events
+        let url: URL!
+        switch event {
+        case "100 MH (30 in)":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/100MH%2030%22?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "200 MH":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/200MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "100 MH":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/100MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "300 MH":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/300MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "400 MH":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/400MH?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "100":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/100M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "200":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/200M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "400":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/400M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "800":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/800M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "1500":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/1500M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "1600":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/1600M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "3000":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/3000M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "3200":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/3200M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        case "5000":
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/5000M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
+        default:
+            url = URL(string: "https://sheets.googleapis.com/v4/spreadsheets/1k8LliY2OG7cta2SePgiffoY8kfDyA-xAFvhWt0VExOM/values/800M?key=AIzaSyCZWel5oio5yXvLIr3UfnRQbDpPHkO7m-c")
         }
+
         let urlRequest = URLRequest(url: url)
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
@@ -59,36 +93,65 @@ class outdoorTableViewController: UIViewController, UITableViewDelegate, UITable
             }
             // parse the result as JSON, since that's what the API provides
             do {
-                guard let allTime800 = try JSONSerialization.jsonObject(with: responseData, options: []) as? NSDictionary else {
+                guard let allTime = try JSONSerialization.jsonObject(with: responseData, options: []) as? NSDictionary else {
                     print("error trying to convert data to JSON")
                     return
                 }
                 
-                let allTime800List = allTime800["values"] as! NSArray
-                let lengthOfEntries = allTime800List.count
+                let allTimeList = allTime["values"] as! NSArray
+                let lengthOfEntries = allTimeList.count
                 
                 DispatchQueue.main.sync() {
-                    for i in 3..<lengthOfEntries-1 {
-                        let entry = allTime800List[i] as! NSArray
-                        let place = entry[0] as! String
-                        let time = entry[1] as! String
-                        let name = entry[2] as! String
-                        let school = entry[3] as! String
-                        let meet = entry[4] as! String
-                        let track = entry[5] as! String
-                        let date = entry[6] as! String
-                        let timeDate = time + "  " + date
+                    if(self.event == "100" || self.event == "200" || self.event == "100 MH") {
+                        for i in 3..<lengthOfEntries {
+                            let entry = allTimeList[i] as! NSArray
+                            let place = entry[0] as! String
+                            let time = entry[1] as! String
+                            let wind = entry[2] as! String
+                            let name = entry[3] as! String
+                            let school = entry[4] as! String
+                            let meet = entry[5] as! String
+                            let track = entry[6] as! String
+                            let date = entry[7] as! String
+                            let timeDate = time + "  " + date
+                            
+                            self.runnerTime.append(time)
+                            self.runnerDate.append(date)
+                            self.runnerName.append(name)
+                            self.runnerPlace.append(place)
+                            self.runnerTimeDate.append(timeDate)
+                            self.runnerSchool.append(school)
+                            self.runnerMeet.append(meet)
+                            self.runnerTrack.append(track)
+                            self.runnerWind.append(wind)
+                            self.outdoorGATTable.reloadData()
+                            
+                            print(self.runnerName)
+                            
+                        }
+                    } else {
+                        for i in 3..<lengthOfEntries {
+                            let entry = allTimeList[i] as! NSArray
+                            let place = entry[0] as! String
+                            let time = entry[1] as! String
+                            let name = entry[2] as! String
+                            let school = entry[3] as! String
+                            let meet = entry[4] as! String
+                            let track = entry[5] as! String
+                            let date = entry[6] as! String
+                            let timeDate = time + "  " + date
                         
-                        self.runnerTime.append(time)
-                        self.runnerDate.append(date)
-                        self.runnerName.append(name)
-                        self.runnerPlace.append(place)
-                        self.runnerTimeDate.append(timeDate)
-                        self.runnerSchool.append(school)
-                        self.runnerMeet.append(meet)
-                        self.runnerTrack.append(track)
-                        self.outdoorGATTable.reloadData()
+                            self.runnerTime.append(time)
+                            self.runnerDate.append(date)
+                            self.runnerName.append(name)
+                            self.runnerPlace.append(place)
+                            self.runnerTimeDate.append(timeDate)
+                            self.runnerSchool.append(school)
+                            self.runnerMeet.append(meet)
+                            self.runnerTrack.append(track)
+                            self.outdoorGATTable.reloadData()
                         
+                        }
                     }
                 }
             } catch  {
@@ -101,11 +164,6 @@ class outdoorTableViewController: UIViewController, UITableViewDelegate, UITable
     
     
     // MARK: - Table view data source
-
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 1
-//    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows

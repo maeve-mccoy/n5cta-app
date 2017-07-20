@@ -1,0 +1,6 @@
+framework module Pods_n5ctaApp {
+  umbrella header "Pods-n5ctaApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
