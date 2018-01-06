@@ -7,29 +7,31 @@
 //
 
 import UIKit
+import MessageUI
 
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, MFMailComposeViewControllerDelegate {
 
     @IBOutlet weak var chooseSeasonButton: UIButton!
 
+    @IBOutlet weak var contactUsButton: UIBarButtonItem!
+    @IBOutlet weak var moreInfoButton: UIBarButtonItem!
+    
     // Picker outlets and action connections
     @IBOutlet weak var genderPicker: UIPickerView!
     @IBOutlet weak var seasonPicker: UIPickerView!
-    @IBOutlet weak var listPicker: UIPickerView!
     @IBOutlet weak var eventPicker: UIPickerView!
     @IBOutlet weak var categoryPicker: UIPickerView!
+    @IBOutlet weak var eventCourseLabel: UILabel!
     
     // Initializing data arrays for pickers
     var seasonOptions: [String] = []
     var genderOptions: [String] = []
     var categoryOptions: [String] = []
-    var listOptions: [String] = []
     var eventOptions: [String] = []
     var currentSeason = ""
     var currentGender = ""
     var currentCategory = ""
-    var currentList = ""
     var currentEvent = ""
     
 
@@ -41,9 +43,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         self.genderPicker.dataSource = self;
         self.genderPicker.delegate = self;
-        
-        self.listPicker.dataSource = self;
-        self.listPicker.delegate = self;
         
         self.eventPicker.dataSource = self;
         self.eventPicker.delegate = self;
@@ -62,11 +61,20 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         categoryOptions = listLogicModel.categoryValues()
         currentCategory = categoryOptions[0]
         
-        listOptions = listLogicModel.listValues()
-        currentList = listOptions[0]
-        
         eventOptions = listLogicModel.eventValues(season: currentSeason, gender: currentGender, category: currentCategory)
         currentEvent = eventOptions[0]
+        
+        self.seasonPicker.layer.cornerRadius = 10;
+        self.seasonPicker.layer.masksToBounds=true;
+        
+        self.genderPicker.layer.cornerRadius = 10;
+        self.genderPicker.layer.masksToBounds=true;
+        
+        self.categoryPicker.layer.cornerRadius = 10;
+        self.categoryPicker.layer.masksToBounds=true;
+        
+        self.eventPicker.layer.cornerRadius = 10;
+        self.eventPicker.layer.masksToBounds=true;
     }
     
     
@@ -105,8 +113,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             return genderOptions.count
         } else if (pickerView == eventPicker) {
             return eventOptions.count
-        } else if (pickerView == listPicker){
-            return listOptions.count
         } else {
             return categoryOptions.count
         }
@@ -119,7 +125,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             cString.remove(at: cString.startIndex)
         }
         
-        if ((cString.characters.count) != 6) {
+        if ((cString.count) != 6) {
             return UIColor.gray
         }
         
@@ -141,42 +147,38 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
         if (pickerView == seasonPicker) {
             let seasonTitle = seasonOptions[row]
-            let title = NSAttributedString(string: seasonTitle, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0, weight: UIFontWeightRegular)])
+            let title = NSAttributedString(string: seasonTitle, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.regular)])
             label?.attributedText = title
             label?.textAlignment = .center
-            label?.textColor = hexStringToUIColor(hex: "#003333")
+            label?.textColor = hexStringToUIColor(hex: "#333333")
             label?.adjustsFontSizeToFitWidth = true
             return label!
         } else if (pickerView == genderPicker) {
             let genderTitle = genderOptions[row]
-            let title = NSAttributedString(string: genderTitle, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0, weight: UIFontWeightRegular)])
+            let title = NSAttributedString(string: genderTitle, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.regular)])
             label?.attributedText = title
             label?.textAlignment = .center
-            label?.textColor = hexStringToUIColor(hex: "#003333")
-            label?.adjustsFontSizeToFitWidth = true
-            return label!
-        } else if (pickerView == listPicker){
-            let listTitle = listOptions[row]
-            let title = NSAttributedString(string: listTitle, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0, weight: UIFontWeightRegular)])
-            label?.attributedText = title
-            label?.textAlignment = .center
-            label?.textColor = hexStringToUIColor(hex: "#003333")
+            label?.textColor = hexStringToUIColor(hex: "#333333")
             label?.adjustsFontSizeToFitWidth = true
             return label!
         } else if (pickerView == eventPicker){
             let eventTitle = eventOptions[row]
-            let title = NSAttributedString(string: eventTitle, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0, weight: UIFontWeightRegular)])
+            let title = NSAttributedString(string: eventTitle, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.regular)])
             label?.attributedText = title
             label?.textAlignment = .center
-            label?.textColor = hexStringToUIColor(hex: "#003333")
+            label?.textColor = hexStringToUIColor(hex: "#333333")
             label?.adjustsFontSizeToFitWidth = true
             return label!
         } else {
             let categoryTitle = categoryOptions[row]
-            let title = NSAttributedString(string: categoryTitle, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0, weight: UIFontWeightRegular)])
+            let title = NSAttributedString(string: categoryTitle, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.regular)])
             label?.attributedText = title
             label?.textAlignment = .center
-            label?.textColor = hexStringToUIColor(hex: "#003333")
+            if(currentSeason=="Cross Country") {
+                label?.textColor = hexStringToUIColor(hex: "#333333")
+            } else {
+                label?.textColor = hexStringToUIColor(hex: "#333333")
+            }
             label?.adjustsFontSizeToFitWidth = true
             return label!
         }
@@ -190,8 +192,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             return "\(genderOptions[genderPicker.selectedRow(inComponent: 0)])"
         } else if (pickerView == eventPicker) {
             return "\(eventOptions[eventPicker.selectedRow(inComponent: 0)])"
-        } else if (pickerView == listPicker){
-            return "\(listOptions[listPicker.selectedRow(inComponent: 0)])"
         } else {
             return "\(categoryOptions[categoryPicker.selectedRow(inComponent: 0)])"
         }
@@ -205,39 +205,92 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         if (pickerView == seasonPicker) {
             currentSeason = seasonOptions[seasonPicker.selectedRow(inComponent: 0)]
             eventOptions = listLogicModel.eventValues(season: currentSeason, gender: currentGender, category: currentCategory)
+            //currentEvent = eventOptions[eventPicker.selectedRow(inComponent: 0)]
+            if (currentSeason=="Cross Country") {
+                categoryPicker.isUserInteractionEnabled = false
+                self.eventCourseLabel.text = "Course"
+                self.eventCourseLabel.frame = CGRect(x: 248, y: 304, width: 62, height: 22)
+                self.categoryPicker.selectRow(0, inComponent: 0, animated: false)
+            } else {
+                categoryPicker.isUserInteractionEnabled = true
+                self.eventCourseLabel.text = "Event"
+                self.eventCourseLabel.frame = CGRect(x: 256, y: 304, width: 45, height: 22)
+            }
+            self.eventPicker.selectRow(0, inComponent: 0, animated: false)
             self.eventPicker.reloadAllComponents()
+            self.categoryPicker.reloadAllComponents()
+            self.eventPicker.selectedRow(inComponent: 0)
+            currentEvent = eventOptions[eventPicker.selectedRow(inComponent: 0)]
         } else if (pickerView == genderPicker) {
             currentGender = genderOptions[genderPicker.selectedRow(inComponent: 0)]
             eventOptions = listLogicModel.eventValues(season: currentSeason, gender: currentGender, category: currentCategory)
+            self.eventPicker.selectRow(0, inComponent: 0, animated: false)
             self.eventPicker.reloadAllComponents()
-        } else if (pickerView == listPicker) {
-            currentList = listOptions[listPicker.selectedRow(inComponent: 0)]
-            eventOptions = listLogicModel.eventValues(season: currentSeason, gender: currentGender, category: currentCategory)
-            self.eventPicker.reloadAllComponents()
-        } else if (pickerView == eventPicker) {
+            self.eventPicker.selectedRow(inComponent: 0)
             currentEvent = eventOptions[eventPicker.selectedRow(inComponent: 0)]
+        } else if (pickerView == eventPicker) {
             self.eventPicker.reloadAllComponents()
+            currentEvent = eventOptions[eventPicker.selectedRow(inComponent: 0)]
         } else if (pickerView == categoryPicker) {
             currentCategory = categoryOptions[categoryPicker.selectedRow(inComponent: 0)]
             eventOptions = listLogicModel.eventValues(season: currentSeason, gender: currentGender, category: currentCategory)
+            self.eventPicker.selectRow(0, inComponent: 0, animated: false)
             self.eventPicker.reloadAllComponents()
+            self.eventPicker.selectedRow(inComponent: 0)
+            currentEvent = eventOptions[eventPicker.selectedRow(inComponent: 0)]
         }
     
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "outdoorGirlsAllTimeSegue" ,
-            let nextScene = segue.destination as? outdoorTableViewController {
-            nextScene.event = currentEvent
+            let nextSceneOutdoor = segue.destination as? outdoorTableViewController {
+            nextSceneOutdoor.event = currentEvent
+            nextSceneOutdoor.gender = currentGender
+            nextSceneOutdoor.category = currentCategory
+            nextSceneOutdoor.season = currentSeason
+        } else if segue.identifier == "xcAllTimeSegue" ,
+            let nextSceneXc = segue.destination as? xcTableViewController {
+            nextSceneXc.gender = currentGender
+            nextSceneXc.event = currentEvent
         }
     }
     // Choose season and click button to continue
     // TODO: add more segues as more API calls are finalized
     @IBAction func chooseSeason(_ sender: UIButton) {
-        if (currentSeason == "Outdoor" && currentGender == "Girls" && currentList == "All Time List") {
+        if (currentSeason == "Outdoor") {
             self.performSegue(withIdentifier: "outdoorGirlsAllTimeSegue", sender: self)
+        } else if (currentSeason == "Cross Country" ) {
+            self.performSegue(withIdentifier: "xcAllTimeSegue", sender: self)
         }
     }
-
+    
+    @IBAction func moreInformation(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "moreInformationSegue", sender: self)
+    }
+    
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        
+        mailComposerVC.setToRecipients(["pmccoy@comcast.net"])
+        mailComposerVC.setSubject("Re: n5cta app")
+        
+        return mailComposerVC
+    }
+    
+    // MARK: MFMailComposeViewControllerDelegate Method
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func contactUs(_ sender: UIBarButtonItem) {
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            self.showAlert(title: "Could not send email.", message: "Please test configuration and try again.")
+        }
+    }
+    
 }
 
